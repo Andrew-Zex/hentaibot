@@ -17,7 +17,7 @@ This bot is not recommended for use by persons under 16 years of age!
 
 This Bot Is Created For Non-Commercial Informational use!
 
-## Step Three
+## Step One
 ### Installing NPM Dependencies!
 
 ``Option one(Simple)``
