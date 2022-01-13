@@ -1,0 +1,30 @@
+{
+  "name": "hentaibot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sharding.js",
+  "scripts": {
+    "noshard": "node src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew-Zex/hentaibot.git"
+  },
+  "keywords": [
+    "Hentai",
+    "Bot",
+    "Discord",
+    "Discord.js"
+  ],
+  "author": "Andrew-Zex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andrew-Zex/hentaibot/issues"
+  },
+  "homepage": "https://github.com/Andrew-Zex/hentaibot#readme",
+  "dependencies": {
+    "discord.js": "^13.5.1",
+    "dotenv": "^11.0.0",
+    "glob": "^7.2.0"
+  }
+}
