@@ -4,7 +4,7 @@
 ## Content
 - [Content](https://github.com/Andrew-Zex/hentaibot/blob/main/README.md#content)
 - [About Bot](https://github.com/Andrew-Zex/hentaibot/blob/main/README.md#about-bot)
-- [Step One](https://github.com/Andrew-Zex/hentaibot/blob/main/README.md#about-bot)
+- [Step One](https://github.com/Andrew-Zex/hentaibot/blob/main/README.md#step-one)
 - [Step Two](https://github.com/Andrew-Zex/hentaibot/blob/main/README.md#step-two)
 - [Step Three](https://github.com/Andrew-Zex/hentaibot/blob/main/README.md#step-three)
 
