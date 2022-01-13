@@ -15,13 +15,13 @@ module.exports = class extends Command {
 	    if(!message.channel.nsfw) {
             return message.reply("Not For This Type of channels! Please, Use NSFW channels!")
 	    } 
-        fetch("https://nekos.life/api/lewd/nsfw_avatar")
+        fetch("https://nekos.life/api/v2/img/nsfw_avatar")
         .then(res => res.json())
 		.then(json => {
             let embed = new MessageEmbed()
 			.setTitle("NSFW Avatar")
 			.setColor("#FFB6C1")
-			.setImage(json.neko)
+			.setImage(json.url)
 			message.channel.send({embeds: [embed]})
 		})
     }

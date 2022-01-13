@@ -21,7 +21,7 @@ module.exports = class extends Command {
             let embed = new MessageEmbed()
 			.setTitle("Tits")
 			.setColor("#FFB6C1")
-			.setImage(json.neko)
+			.setImage(json.url)
 			message.channel.send({embeds: [embed]})
 		})
     }
