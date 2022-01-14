@@ -7,7 +7,8 @@ module.exports = class extends Command {
 	constructor(...args) {
 		super(...args, {
 			description: '||Pyssy||',
-			category: 'NSFW'
+			category: 'NSFW',
+			aliases: ["p"]
 		});
 	}
 
@@ -22,7 +23,7 @@ module.exports = class extends Command {
 			.setTitle("Pyssy")
 			.setColor("#FFB6C1")
 			.setImage(json.url)
-			message.channel.send({embeds: [embed]})
+			message.channel.send({embeds: [embed], reply: {messageReference:  `${message.id}`}})
 		})
     }
 

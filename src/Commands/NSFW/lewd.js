@@ -7,7 +7,8 @@ module.exports = class extends Command {
 	constructor(...args) {
 		super(...args, {
 			description: '||LEWD||',
-			category: 'NSFW'
+			category: 'NSFW',
+			aliases: ["lwd"]
 		});
 	}
 
@@ -22,7 +23,7 @@ module.exports = class extends Command {
 			.setTitle("Lewd")
 			.setColor("#FFB6C1")
 			.setImage(json.neko)
-			message.channel.send({embeds: [embed]})
+			message.channel.send({embeds: [embed], reply: {messageReference:  `${message.id}`}})
 		})
     }
 

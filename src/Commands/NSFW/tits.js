@@ -7,7 +7,8 @@ module.exports = class extends Command {
 	constructor(...args) {
 		super(...args, {
 			description: '||Tits||',
-			category: 'NSFW'
+			category: 'NSFW',
+			aliases: ["t"]
 		});
 	}
 
@@ -22,7 +23,7 @@ module.exports = class extends Command {
 			.setTitle("Tits")
 			.setColor("#FFB6C1")
 			.setImage(json.url)
-			message.channel.send({embeds: [embed]})
+			message.channel.send({embeds: [embed], reply: {messageReference:  `${message.id}`}})
 		})
     }
 

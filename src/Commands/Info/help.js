@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, Shard } = require('discord.js');
 const Command = require('../../Structures/Command');
 
 module.exports = class extends Command {
@@ -17,7 +17,7 @@ module.exports = class extends Command {
 			.setColor('BLUE')
 			.setAuthor(`${message.guild.name} Help Menu`, message.guild.iconURL({ dynamic: true }))
 			.setThumbnail(this.client.user.displayAvatarURL())
-			.setFooter(`Requested By ${message.author.username}`, message.author.displayAvatarURL({ dynamic: true }))
+			.setFooter(`Requested By ${message.author.username} | Shard #${message.guild.shardId}`, message.author.displayAvatarURL({ dynamic: true }))
 			.setTimestamp();
 
 		if (command) {
@@ -42,7 +42,7 @@ module.exports = class extends Command {
 				embed.addField(`**${this.client.utils.capitalise(category)}**`, this.client.commands.filter(cmd =>
 					cmd.category === category).map(cmd => `\`${cmd.name}\``).join(' '));
 			}
-			message.channel.send({embeds: [embed]});
+			message.channel.send({embeds: [embed], reply: {messageReference:  `${message.id}`}});
 		}
 	}
 
