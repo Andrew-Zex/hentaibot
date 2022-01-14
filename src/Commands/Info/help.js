@@ -25,13 +25,8 @@ module.exports = class extends Command {
 
 			if (!cmd) return message.channel.send(`Command Not Found. \`${command}\``);
 
-			embed.setAuthor(`${this.client.utils.capitalise(cmd.name)} Help Command`, this.client.user.displayAvatarURL());
-			embed.setDescription([
-				`**❯ Aliases:** ${cmd.aliases.length ? cmd.aliases.map(alias => `\`${alias}\``).join(' ') : 'Not Found'}`,
-				`**❯ Description:** ${cmd.description}`,
-				`**❯ Category:** ${cmd.category}`,
-				`**❯ Usage:** ${cmd.usage}`
-			]);
+			embed.setAuthor(`${this.client.utils.capitalise(cmd.name)} Command`, this.client.user.displayAvatarURL());
+			embed.setDescription(`**❯ Aliases:** ${cmd.aliases.length ? cmd.aliases.map(alias => `\`${alias}\``).join(' ') : 'Not Found'}\n**❯ Description:** ${cmd.description}\n**❯ Category:** ${cmd.category}\n**❯ Usage:** ${cmd.usage}`);
 
 			message.channel.send({embeds: [embed]});
 		} else {
