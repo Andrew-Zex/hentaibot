@@ -6,9 +6,9 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			description: '||Keta||',
+			description: '||NSFW Lolies||',
 			category: 'NSFW',
-			aliases: ["k"]
+			aliases: ["k", 'keta']
 		});
 	}
 
@@ -20,7 +20,7 @@ module.exports = class extends Command {
         .then(res => res.json())
 		.then(json => {
             let embed = new MessageEmbed()
-			.setTitle("Keta")
+			.setTitle("NSFW Lolies")
 			.setColor("#FFB6C1")
 			.setImage(json.url)
 			message.channel.send({embeds: [embed], reply: {messageReference:  `${message.id}`}})
