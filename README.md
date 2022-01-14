@@ -28,7 +28,7 @@ This Bot Is Created For Non-Commercial Informational use!
 1. Open CMD/Terminal
 2. Enter the following command:
 ```
-npm i discord.js glob
+npm i discord.js glob moment ms os
 ```
 3. Wait For Install
 
