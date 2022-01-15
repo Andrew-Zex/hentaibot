@@ -1,5 +1,8 @@
 # Hentai Bot
 ### ATTENTION! THIS BOT ONLY FOR 16+ USERS! BOT CONTAINS NSFW IMAGES/GIFs
+[Hentai Bot on Top.gg](https://top.gg/bot/651532627068846101)
+
+![Discord Bots](https://top.gg/api/widget/651532627068846101.svg)
 
 ## Content
 - [Content](https://github.com/Andrew-Zex/hentaibot/blob/main/README.md#content)
